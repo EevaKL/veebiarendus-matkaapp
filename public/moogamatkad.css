@@ -1,0 +1,196 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.paisSektsioon {
+    height: 778px;
+    width: 100%;
+    background: url('assets/Hills.png');
+    background-size: cover;
+    background-repeat: none;
+}
+
+.paislogo {
+    width: 80px;
+    height: 78px;
+    margin-left: 50px;
+}
+
+.paisnimi {
+    font-weight: bolder;
+    font-size: 33px;
+    width: 126px;
+    height: 75px;
+    color: #0B0B0B;
+    line-height: 35px;
+    padding-top: 3px;
+}
+
+.paisnavi {
+    height: 20px;
+}
+
+.navigrupp {
+    justify-content: flex-end;
+}
+
+.logogrupp,
+.navigrupp {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+
+li a {
+    padding-left: 25px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16.67px;
+    letter-spacing: 2.67px;
+}
+
+.rida {
+    display: flex;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.paisSekstioon-pealkirjad {
+    padding-top: 50px;
+}
+
+.paisSekstioon-pealkirjad h1,
+.paisSekstioon-pealkirjad h2,
+.paisSekstioon-pealkirjad h3,
+.paisSekstioon-pealkirjad h4 {
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #0B0B0B;
+}
+
+.paisSekstioon-pealkirjad h2 {
+    font-size: 39.57px;
+    line-height: 42.74px;
+}
+
+.paisSekstioon-pealkirjad h1 {
+    font-size: 74.39px;
+    line-height: 91px;
+}
+
+.paisSekstioon-pealkirjad h3 {
+    font-size: 20.83px;
+    line-height: 29.17px;
+    padding-bottom: 15px;
+}
+
+.paisSekstioon-pealkirjad h4 {
+    font-size: 12.5px;
+    line-height: 29.17px;
+    align-items: left;
+    color: #FFFFFF;
+    letter-spacing: 2.25px;
+    margin: auto;
+}
+
+.liblikas2 {
+    width: 60px;
+    height: 32px;
+    margin-left: -65px;
+    margin-top: -60px;
+}
+
+.liblikas1 {
+    width: 75.27px;
+    height: 66.04px;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.calltoaction {
+    background: #0B0B0B 0% 0% no-repeat padding-box;
+    width: 247px;
+    height: 58px;
+}
+
+.calltoaction a {
+    color: #FFFFFF;
+}
+
+.pealispilt {
+    overflow: hidden;
+}
+
+.pealispilt .matkaline {
+    width: 860px;
+    height: 860px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: -400px;
+}
+
+.pealispilt .vari {
+    width: 800px;
+    height: 86px;
+    margin-top: -42px;
+    margin-left: 30px;
+    filter: contrast(90%);
+}
+
+@media screen and (max-width: 1020px) {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 30px;
+    }
+
+    li a {
+        padding-left: 10px;
+        color: #000000;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 2.67px;
+    }
+
+    .paislogo {
+        width: 70px;
+        height: 68px;
+        margin-left: 50px;
+    }
+    
+    .paisnimi {
+        font-weight: bolder;
+        font-size: 26px;
+        width: 126px;
+        height: 75px;
+        color: #0B0B0B;
+        line-height: 30px;
+        padding-top: 8px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .paisSekstioon-pealkirjad {
+        padding-top: 231px;
+    }
+}
+
+@media (min-width: 770px) {
+    .container, .container-lg, .container-sm, .container-md, .container-xl {
+        max-width: 100%;
+    }
+}
