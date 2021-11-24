@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mõõgamatkad-registreerumine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/moogamatkad.css">
+    <script src="moogamatkad.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="paisSektsioon">
+            <div class="container">
+                <%- include("../partials/menyy.ejs") %>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="registreerumiseVorm row">
+            <div class="col-12 col-lg-5">
+                <h1>Registreeru matkale: <%= matk.nimetus %>
+                </h1>
+                <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
+                <p>
+                    <%= matk.kirjeldus %>
+                </p>
+            </div>
+
+            <div class="col-12 col-lg-5 kontaktSektsioon regkontaktSektsioon">
+                <form action="/kinnitus/<%= matk.id %>" id="saadateade">
+                    <label for="nimi"><b>Nimi:</b></label>
+                    <input type="text" id="nimi" name="nimi" placeholder="Nimi"><br>
+                    <label for="email"><b>Email:</b></label>
+                    <input type="text" id="email" name="email" placeholder="Email"><br>
+                    <textarea name="teade" placeholder="Jäta oma teade" id="teade" cols="30" rows="10"></textarea><br>
+                    <input type="submit" name="nupp" id="saada" value="Saada">
+                    <script src="moogamatkad.js"></script>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>

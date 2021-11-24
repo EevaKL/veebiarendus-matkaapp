@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mõõgamatkad-kontakt</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="moogamatkad.css">
+    <script src="moogamatkad.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="paisSektsioon">
+            <div class="container">
+                <%- include("../partials/menyy.ejs") %>
+                    <div class="kontaktSektsioon">
+                        <div class="col-12 col-lg-6 kontaktandmed">
+                            <h1>KONTAKTID</h1>
+                            <table>
+                                <tr>
+                                    <th>Juriidiline aadress:</th>
+                                    <td>Seikleja 1, Põlva, Põlvamaa 61915</td>
+                                </tr>
+                                <tr>
+                                    <th>Registrikood:</th>
+                                    <td>10698966</td>
+                                </tr>
+                                <tr>
+                                    <th>KMKR:</th>
+                                    <td>EE100675586</td>
+                                </tr>
+                                <tr>
+                                    <th>Üldtelefon:</th>
+                                    <td>+372 730 9876</td>
+                                </tr>
+                                <tr>
+                                    <th>E-post:</th>
+                                    <td><a href="mailto:info@moogamatkad.ee">info@moogamatkad.ee</a></td>
+                                </tr>
+                                <tr>
+                                    <th>Facebook:</th>
+                                    <td><a href="#">www.facebook.com/matkaklubi</a></td>
+                                </tr>
+                            </table>
+                            <div class="googlemap" id="googleMap" style="width:100%;height:352px;"></div>
+                            <script
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWWJjLrrOdUZZobT-cWOBE-Gjreb33Wpc&callback=myMap"></script>
+                        </div>
+                        <div class="col-12 col-lg-6 kontaktivorm">
+                            <h3>Võta meiega ühendust</h3>
+                            <div class="sisu-teade">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo ea
+                                    nulla illum
+                                    eaque officia quisquam tempora quo veniam quos suscipit optio recusandae totam
+                                    laborum
+                                    corporis
+                                    rerum iste obcaecati?
+                                </p>
+                            </div>
+                            <form action="#" id="saadateade">
+                                <label for="nimi"><b>Nimi:</b></label>
+                                <input type="text" id="nimi" name="nimi" placeholder="Nimi"><br>
+                                <label for="email"><b>Email:</b></label>
+                                <input type="text" id="email" name="email" placeholder="Email"><br>
+                                <textarea name="teade" placeholder="Jäta oma teade" id="teade" cols="30"
+                                    rows="10"></textarea><br>
+                                <input type="submit" name="nupp" id="saada" value="Saada">
+                                <script src="moogamatkad.js"></script>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </header>
+
+
+</body>
+
+</html>

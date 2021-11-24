@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,58 +15,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div class="paisSektsioon"> 
+        <div class="paisSektsioon">
             <div class="container">
-                <div class="row pt-1">
-                    <div class="col-md-4 d-flex logogrupp">
-                        <img class="paislogo" src="./assets/klubilogo.png" alt="matkaklubi_logo">
-                        <div class="paisnimi">
-                            MÕÕGA- MATKAD
+                <%- include("../partials/menyy.ejs") %>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 paisSekstioon-pealkirjad">
+                            <div class="rida">
+                                <h2>Õppematkad</h2>
+                                <img src="./assets/Butterfly.png" class="liblikas1" alt="kollane_liblikas">
+                            </div>
+                            <div class="rida">
+
+                                <h1>Ajaloo radadel</h1>
+                            </div>
+                            <div class="rida">
+                                <h3>
+                                    Tule koos meiega seiklema!
+                                </h3>
+                            </div>
+                            <div class="rida calltoaction">
+                                <h4>
+                                    <img src="./assets/Liblikas_sinine.png" class="liblikas2" alt="sinine_liblikas">
+                                    <a href="#">Registreeru matkale</a>
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-8 navigrupp">
-                        <ul class="paisnavi">
-                            <li><a href="#">ESILEHT</a></li>
-                            <li><a href="#">BLOGI</a></li>
-                            <li><a href="#">TULEVASED MATKAD</a></li>
-                            <li><a href="#">KONTAKT</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-6 paisSekstioon-pealkirjad">
-                        <div class="rida">
-                            <h2>Õppematkad</h2>
-                            <img src="./assets/Butterfly.png" class="liblikas1" alt="kollane_liblikas">
-                        </div>
-                        <div class="rida">
-    
-                            <h1>Ajaloo radadel</h1>
-                        </div>
-                        <div class="rida">
-                            <h3>
-                                Tule koos meiega seiklema!
-                            </h3>
-                        </div>
-                        <div class="rida calltoaction">
-                            <h4> 
-                                <img src="./assets/Liblikas_sinine.png" class="liblikas2" alt="sinine_liblikas">
-                                <a href="#">Registreeru matkale</a>
-                            </h4>
-                        </div>
-                    </div>
                         <div class="d-none d-lg-block col-lg-6 pealispilt">
                             <img class="matkaline" src="./assets/matkaline_pildistamas.png" alt="">
                             <img class="vari" src="./assets/vari.png" alt="">
                         </div>
                     </div>
-                </div>
             </div>
-    
         </div>
     </header>
-    
+    <main>
+        <div class="matkadeSektsioon" id="tulevasedmatkad">
+            <div class="matkadeTutvustus">
+                <div class="col-lg-5">
+                    <h5>Tulevased matkad</h5>
+                    <h3>Leia Oma Unistuste Sihtmärk</h3>
+                    <p class="tulevasedmatkadtutvustus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                        quam adipisci fugit accusantium!
+                        Quod aut illo harum, praesentium quisquam minus error sint magnam impedit cupiditate saepe!
+                        Iusto
+                        officia optio magni!</p>
+                </div>
+                <div class="col-lg-5"></div>
+            </div>
+            <div class="matkadKonteiner row">
+                <% for (let i=0; i < matkad.length; i++) { %>
+                    <div class="col-md-4 card">
+                        <img class="card-img-top" src="<%= matkad[i].pildiUrl %>" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <%= matkad[i].nimetus %>
+                            </h3>
+                            <p>
+                                <%= matkad[i].kirjeldus %>
+                            </p>
+                            <a href="#" class="btn btn-primary">Registreeru</a>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
