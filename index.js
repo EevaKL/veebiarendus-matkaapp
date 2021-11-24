@@ -27,10 +27,6 @@ matkad = [
     }
 ]
 
-function registreerumiseKinnitus(req, res) {
-    console.log(req.query)
-    res.end(`Registreeruti matkale`)
-}
 
 uudised = [
     {
@@ -76,6 +72,24 @@ uudised = [
         uudispilt: "/assets/udziro_lake.jpg"
     }
 ]
+
+function registreerumiseKinnitus(req, res) {
+    console.log(req.query.nimi)
+    if (!req.query.email) {
+        res.end("Email puudub, registreerumine ebaõnnestus!")
+        return false
+    }
+    const registreerumine = {
+        nimi: req.query.nimi,
+        email: req.query.email,
+        teade: req.query.teade
+    }
+
+    const matk = matkad[req.params.matkaId]
+    matk.osalejad.push(registreerumine)
+
+    res.end(`Registreeruti matkale`)
+}
 
 function naitaUudist(req, res) {
     const uudisIndeks = req.params.uudisIndeks
