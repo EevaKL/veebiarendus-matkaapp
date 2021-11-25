@@ -40,6 +40,10 @@
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .navigrupp {
     justify-content: flex-end;
 }
