@@ -9,21 +9,37 @@ matkad = [
         nimetus: "Hukkunud alpinisti radadel",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
         pildiUrl: "/assets/hukkunud_alpinisti_radadel.jpg",
-        osalejad: []
+        osalejad: [],
+        kasNahtav: true,
+        kasRegistreerumineAvatud: true
     },
     {
         id: 1,
         nimetus: "Uputatud linn Rumeenias",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
         pildiUrl: "/assets/uputatud_linn_rumeenias.jpg",
-        osalejad: []
+        osalejad: [],
+        kasNahtav: true,
+        kasRegistreerumineAvatud: false
     },
+    /* siin on üks peidetud matk*/
     {
         id: 2,
+        nimetus: "Uputatud linn Rumeenias",
+        kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
+        pildiUrl: "/assets/uputatud_linn_rumeenias.jpg",
+        osalejad: [],
+        kasNahtav: false,
+        kasRegistreerumineAvatud: true
+    },
+    {
+        id: 3,
         nimetus: "Talvematk: Religioosed ehitised Uue usu kloostris",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
         pildiUrl: "/assets/religioosed_ehitised_talvematk_Uueusu_kloostris.jpg",
-        osalejad: []
+        osalejad: [],
+        kasNahtav: true,
+        kasRegistreerumineAvatud: true
     }
 ]
 
@@ -97,12 +113,20 @@ function naitaUudist(req, res) {
     res.render("pages/uudis", { uudis })
 }
 
+function matkNahtav(matk) {
+    return matk.kasNahtav
+}
+
+function naitaMatkad(req, res) {
+    const nahtavadMatkad = matkad.filter(matkNahtav)
+    res.render('pages/index', { matkad: nahtavadMatkad })
+}
 
 const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
-app.get('/', (req, res) => res.render('pages/index', { matkad }))
+app.get("/", naitaMatkad)
 app.get('/kontakt', (req, res) => res.render('pages/kontakt'))
 app.get('/blogi', (req, res) => res.render('pages/blogi', { uudised }))
 app.get('/registreerumine/:matkaId',

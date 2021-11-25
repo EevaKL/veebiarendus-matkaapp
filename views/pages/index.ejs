@@ -39,7 +39,7 @@
                             <div class="rida calltoaction">
                                 <h4>
                                     <img src="./assets/Liblikas_sinine.png" class="liblikas2" alt="sinine_liblikas">
-                                    <a href="#">Registreeru matkale</a>
+                                    <a href="/#tulevasedmatkad">Registreeru matkale</a>
                                 </h4>
                             </div>
                         </div>
@@ -79,7 +79,11 @@
                             <p>
                                 Registreerunud osalejaid: <%= matkad[i].osalejad.length %>
                             </p>
-                            <a href="/registreerumine/<%= i %>" class="btn btn-primary">Registreeru</a>
+                            <% if (matkad[i].kasRegistreerumineAvatud) { %>
+                                <a href="/registreerumine/<%= i %>" class="btn btn-primary">Registreeru</a>
+                                <% } else { %>
+                                    <div class="alert alert-info">Registreerumine suletud!</div>
+                                    <% } %>
                         </div>
                     </div>
                     <% } %>
