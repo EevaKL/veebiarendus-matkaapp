@@ -22,18 +22,8 @@ matkad = [
         kasNahtav: true,
         kasRegistreerumineAvatud: false
     },
-    /* siin on üks peidetud matk*/
     {
         id: 2,
-        nimetus: "Uputatud linn Rumeenias",
-        kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
-        pildiUrl: "/assets/uputatud_linn_rumeenias.jpg",
-        osalejad: [],
-        kasNahtav: false,
-        kasRegistreerumineAvatud: true
-    },
-    {
-        id: 3,
         nimetus: "Talvematk: Religioosed ehitised Uue usu kloostris",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
         pildiUrl: "/assets/religioosed_ehitised_talvematk_Uueusu_kloostris.jpg",
