@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mõõgamatkad-uudis</title>
+    <title>Mõõgamatkad-matk</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -28,14 +28,26 @@
         <div class="uudisSektsioon row">
             <div class="col-12 col-lg-6">
                 <h3>
-                    <%= uudis.pealkiri %>
+                    <%= matk.nimetus %>
                 </h3>
                 <p class="kirjeldused">
-                    <%= uudis.uudistekst %>
+                    <%= matk.pikkkirjeldus %>
                 </p>
             </div>
             <div class="col-12 col-lg-6 uudis-tekst">
-                <img class="uudis-pilt" src="<%= uudis.uudispilt %>" alt="">
+                <img class="uudis-pilt" src="<%= matk.pildiUrl %>" alt="">
+                <h3 class="osalejad">Osalejad:</h3>
+                <% for (let i=0; i < matk.osalejad.length; i++) { %>
+                    <table class="osalejatelist">
+                        <tr>
+                            <th></th>
+                            <td>
+                                <%= matk.osalejad[i].nimi %>
+                            </td>
+                        </tr>
+                    </table>
+                    <% } %>
+
             </div>
         </div>
     </main>

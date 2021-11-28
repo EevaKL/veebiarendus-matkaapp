@@ -27,17 +27,14 @@
     </header>
     <main>
         <div class="registreerumiseVorm row">
-            <div class="col-12 col-lg-5">
-                <h1>Registreeru matkale: <%= matk.nimetus %>
-                </h1>
-                <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
-                <p>
+            <div class="col-12 col-lg-6">
+                <h3>Registreeru matkale:<br>
+                    <%= matk.nimetus %>
+                </h3>
+                <p class="kirjeldused">
                     <%= matk.kirjeldus %>
                 </p>
-            </div>
-
-            <div class="col-12 col-lg-5 kontaktSektsioon regkontaktSektsioon">
-                <form action="/kinnitus/<%= matk.id %>" id="saadateade">
+                <form class="regkontaktSektsioon" action="/kinnitus/<%= matk.id %>" id="saadateade">
                     <label for="nimi"><b>Nimi:</b></label>
                     <input type="text" id="nimi" name="nimi" placeholder="Nimi"><br>
                     <label for="email"><b>Email:</b></label>
@@ -46,6 +43,9 @@
                     <input type="submit" name="nupp" id="saada" value="Saada">
                     <script src="moogamatkad.js"></script>
                 </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
             </div>
         </div>
     </main>

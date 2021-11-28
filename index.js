@@ -8,6 +8,7 @@ matkad = [
         id: 0,
         nimetus: "Hukkunud alpinisti radadel",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
+        pikkkirjeldus: "Lorem ipsum dolor sit amet. Et omnis odio non consectetur iure aut molestiae assumenda quo velit aliquid est voluptatum unde eos consectetur provident et voluptatum aliquam. Aut sequi sint est quod quae in quia laborum ea porro tenetur et consequatur minima. Et assumenda galisum est sapiente voluptates ut repudiandae voluptas qui aspernatur voluptatem et odio. Ab molestias quasi et delectus consectetur ea culpa dolor qui sunt omnis vel reprehenderit ullam eum expedita repellat ut iste veritatis. Eum magnam iure et facilis natus aut voluptas dolorum. Est quae internos est quia perspiciatis vel temporibus voluptas nam totam officiis ut reprehenderit aspernatur qui voluptas quaerat. 33 suscipit debitis ab voluptatum repudiandae est maxime aliquid! Aut cupiditate exercitationem in autem unde ut consequatur Quis ex debitis culpa aut mollitia fuga id accusamus placeat? Hic iusto modi est dicta dolorum 33 alias voluptatibus eos incidunt deserunt et sequi laborum et laboriosam aliquid et reprehenderit laudantium. Et ipsam officia repudiandae architecto ab beatae impedit est aspernatur voluptates At consequatur repudiandae vel quis deleniti. Id alias neque et nesciunt autem eos quibusdam aperiam eos alias tenetur sed similique officia! Sit iusto molestias ut magnam totam non adipisci tenetur qui deleniti voluptate! Non quasi velit qui consequatur illum qui unde asperiores est necessitatibus tempora qui veniam officiis. Vel nulla deleniti aut totam dolorem ut dolorem optio. In inventore ullam id optio voluptatem qui harum nemo aut inventore obcaecati. Et facere natus aut eligendi aliquam ut deleniti atque est suscipit atque et blanditiis atque! Quo aspernatur quasi ut autem quos rem laudantium numquam non dolorum temporibus. Eum dignissimos voluptas et galisum delectus qui omnis incidunt et internos voluptate. Sit veritatis molestias id voluptatem sunt et minus voluptatem ut expedita dolorum vel quod galisum.",
         pildiUrl: "/assets/hukkunud_alpinisti_radadel.jpg",
         osalejad: [],
         kasNahtav: true,
@@ -15,8 +16,9 @@ matkad = [
     },
     {
         id: 1,
-        nimetus: "Uputatud linn Rumeenias",
+        nimetus: "Uputatud linn Bulgaarias",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
+        pikkkirjeldus: "Lorem ipsum dolor sit amet. Et sequi consectetur in molestias velit in quia dolore sed aperiam voluptas sed quam totam. Qui porro voluptas eos adipisci totam id molestiae expedita qui praesentium laboriosam nam voluptatem animi ut possimus accusamus. Sit rerum beatae et velit iste sit fugiat pariatur. Vel quia autem ut blanditiis galisum sit consequatur odio nihil illum aut fuga voluptas. Ea dolor dolores eveniet ipsum sed earum quae. Sit iure tenetur est veniam atque et eveniet deleniti. In omnis illo sit odio neque cum dolorum quia est deleniti laborum est facilis voluptatem. Eos voluptatibus velit ut maxime atque est quia eveniet ab nihil Quis qui tenetur minus! Et voluptas velit est voluptatum enim est adipisci quasi eum magni odit est quidem animi cum eius temporibus. Eum quas voluptas in blanditiis modi rem nobis reiciendis et voluptatum culpa nam nulla necessitatibus aut velit molestiae sed aspernatur illo. Vel animi nisi a velit unde hic sequi perferendis. Est odit sequi rem cumque amet cum suscipit veritatis aut labore dolor non voluptatem nihil eum amet perspiciatis ea exercitationem voluptatem. Cum officia repellendus qui nihil laborum sed facilis aliquam ad voluptas labore. Non rerum ducimus quo rerum dignissimos non sint tempore aut porro neque est ipsa cumque. Aut nisi magni eum repellendus et quis itaque recusandae delectus. Sit galisum rerum rem distinctio tempore in necessitatibus incidunt sit perspiciatis voluptates aut internos labore et officiis ipsum et itaque quam. Et nihil ullam sit nobis nobis eum dolorem doloribus non quis sunt non dolore vitae ut commodi magnam! Nam officiis explicabo At excepturi libero sit autem dicta cum pariatur quas aut dolor accusantium qui asperiores praesentium. Aut corporis voluptatem et doloribus exercitationem qui nobis quia et porro internos ad voluptate quod et nisi quod. Est rerum sint sit accusamus sunt sit natus rerum rem eveniet quos? Ut veritatis quasi et recusandae voluptas aut dolorum voluptates est nemo incidunt sed veniam doloremque! 33 laudantium aliquam quo obcaecati praesentium aut molestiae fugit rem velit saepe et nihil optio et iure animi. Qui illum magni qui cupiditate eligendi vel nihil nihil. Sit totam explicabo cum voluptatem voluptas sed ratione nesciunt aut reprehenderit molestiae et quod reiciendis? Et recusandae repellendus ut maxime officia ea libero rerum.",
         pildiUrl: "/assets/uputatud_linn_rumeenias.jpg",
         osalejad: [],
         kasNahtav: true,
@@ -26,6 +28,7 @@ matkad = [
         id: 2,
         nimetus: "Talvematk: Religioosed ehitised Uue usu kloostris",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
+        pikkkirjeldus: "Lorem ipsum dolor sit amet. Et consequatur necessitatibus sit aperiam quia sed blanditiis beatae est maxime rerum? Ut atque eligendi in dolores accusantium ex quia omnis quo enim molestias sit totam quod in placeat numquam in autem quia! Hic repudiandae quia id similique harum ad excepturi nihil non possimus aspernatur in cumque eligendi non rerum ullam. Sit quas veniam non ipsum unde id architecto necessitatibus. Et minus nesciunt in animi dolorum ut ducimus totam At perferendis velit est unde temporibus ad sunt ipsa sed quod delectus. Est minima laborum cum totam enim est enim vitae. In dolores aperiam vel esse eaque et voluptas saepe est rerum autem et soluta adipisci qui enim ullam! Ut beatae quidem eum quia natus ea maiores suscipit quo omnis minima sit recusandae corporis est quis nostrum! Qui enim velit sit quia quos in mollitia ducimus aut omnis quam et aliquam iure et cupiditate perferendis. Aut error et optio voluptas ea excepturi ratione a maiores animi aut sint pariatur ut suscipit maiores. Sed temporibus libero et vitae impedit sed culpa totam qui deleniti nisi est nobis perferendis. Aut consequatur assumenda ea mollitia quod cum tenetur nemo et quibusdam ullam hic quos nihil non ipsum autem non quisquam odit! Et ipsam consequatur ea accusamus consequatur aut dolorem natus blanditiis possimus et adipisci nemo. Est omnis alias est corrupti galisum et quas consequuntur. Ut accusantium sunt aut internos mollitia aut quidem velit et laboriosam molestiae. Aut veritatis veritatis ut omnis deleniti et voluptatum dolorem est autem blanditiis. Facilis quae et repellat dolor est voluptas culpa. Ut iure quaerat est sunt nobis vel aliquam velit eum rerum dignissimos eum magni voluptatem. Quo obcaecati nihil qui eligendi illum ut incidunt illo eos fugiat tempora sed cupiditate iste et omnis.",
         pildiUrl: "/assets/religioosed_ehitised_talvematk_Uueusu_kloostris.jpg",
         osalejad: [],
         kasNahtav: true,
@@ -103,6 +106,12 @@ function naitaUudist(req, res) {
     res.render("pages/uudis", { uudis })
 }
 
+function kuvaMatk(req, res) {
+    const matkaId = req.params.matkaId
+    const matk = matkad[matkaId]
+    res.render("pages/matk", { matk })
+}
+
 function matkNahtav(matk) {
     return matk.kasNahtav
 }
@@ -117,6 +126,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.get("/", naitaMatkad)
+app.get('/matk', (req, res) => res.render('pages/matk', { matkad }))
 app.get('/kontakt', (req, res) => res.render('pages/kontakt'))
 app.get('/blogi', (req, res) => res.render('pages/blogi', { uudised }))
 app.get('/registreerumine/:matkaId',
@@ -127,5 +137,6 @@ app.get('/registreerumine/:matkaId',
 )
 app.get("/kinnitus/:matkaId", registreerumiseKinnitus)
 app.get("/blogi/:uudisIndeks", naitaUudist)
+app.get("/matk/:matkaId", kuvaMatk)
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`))
