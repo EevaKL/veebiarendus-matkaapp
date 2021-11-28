@@ -299,17 +299,6 @@ img.registreerumine-pilt {
     margin-left: 60px;
 }
 
-.blogiDisain {
-	width: 1200px;
-	height: 1200px;
-    border-radius: 650px 570px 660px 580px; 
-	background-color:  rgba(0, 56, 129, 0.082);
-    margin-top: -1300px;
-    margin-left: -200px;
-    overflow: hidden;
-    object-fit: cover;
-}
-
 .blogiSektsioon {
     margin-top: -630px;
 }
@@ -347,6 +336,17 @@ img.uudis-pilt {
     width: 100%;
     object-fit: cover;
     margin-bottom: 30px;
+}
+
+.uudistePohitekst {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(169, 169, 169, 0.452);
+    border-radius: 5px;
+    border: 1px solid rgba(145, 145, 145, 0.452);
 }
 
 
