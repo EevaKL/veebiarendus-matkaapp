@@ -25,24 +25,27 @@
         </div>
     </header>
     <main>
-        <div class="uudisSektsioon row">
-            <div class="col-12 col-lg-6 uudis-tekst">
-                <h3>
-                    <%= uudis.pealkiri %>
-                </h3>
-                <p class="kirjeldused">
-                    <%= uudis.uudistekst %>
+        <div class="uudisSektsioon">
+            <div class="row">
+                <div class="col-12 col-lg-6 uudis-tekst">
+                    <h3>
+                        <%= uudis.pealkiri %>
+                    </h3>
+                    <p class="kirjeldused">
+                        <%= uudis.uudistekst %>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 uudis-pilt">
+                    <img class="uudis-pilt" src="<%= uudis.uudispilt %>" alt="">
+                </div>
+            </div>
+            <div>
+                <p>
+                    <%= uudis.pohitekst %>
                 </p>
             </div>
-            <div class="col-12 col-lg-6 uudis-pilt">
-                <img class="uudis-pilt" src="<%= uudis.uudispilt %>" alt="">
-            </div>
         </div>
-        <div class="uudistePohitekst">
-            <p>
-                <%= uudis.pohitekst %>
-            </p>
-        </div>
+
     </main>
 </body>
 
