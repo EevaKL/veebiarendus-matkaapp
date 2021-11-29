@@ -146,6 +146,10 @@ li a {
     color: #FFFFFF;
 }
 
+.calltoaction:hover {
+    background: #0062ca;
+}
+
 .pealispilt {
     overflow: hidden;
 }
