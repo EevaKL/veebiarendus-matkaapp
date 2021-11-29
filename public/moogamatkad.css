@@ -77,6 +77,10 @@ li a {
     letter-spacing: 2.67px;
 }
 
+li a:hover {
+    color: #0062ca;
+}
+
 .rida {
     display: flex;
     text-transform: uppercase;
