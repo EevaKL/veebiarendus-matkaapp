@@ -135,6 +135,7 @@ li a {
     background: #0B0B0B 0% 0% no-repeat padding-box;
     width: 247px;
     height: 58px;
+    border-radius: 5px;
 }
 
 .calltoaction a {
