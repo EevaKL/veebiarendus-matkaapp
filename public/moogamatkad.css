@@ -136,7 +136,7 @@ li a:hover {
     width: 75.27px;
     height: 66.04px;
     margin-top: -50px;
-    margin-left: 100px;
+    margin-left: 10px;
 }
 
 .calltoaction {
@@ -388,7 +388,7 @@ img.uudis-pilt {
     }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 810px) {
     .paisSekstioon-pealkirjad {
         padding-top: 231px;
     }
@@ -400,7 +400,7 @@ img.uudis-pilt {
     }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 500px) {
     .container, .container-lg, .container-sm, .container-md, .container-xl {
         max-width: 100%;
     }
