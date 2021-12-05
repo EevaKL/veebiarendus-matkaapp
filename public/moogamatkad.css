@@ -88,7 +88,7 @@ li a:hover {
 }
 
 .paisSekstioon-pealkirjad {
-    padding-top: 70px;
+    padding-top: 150px;
 }
 
 .paisSekstioon-pealkirjad h1,
@@ -405,10 +405,6 @@ img.uudis-pilt {
 }
 
 @media screen and (max-width: 768px) {
-    .matkadeSektsioon {
-        margin-top: -100px;
-    }
-
     .topnav {
         overflow: hidden;
         position: relative;
@@ -442,7 +438,7 @@ img.uudis-pilt {
     }
 
     li a {
-        padding-left: 10px;
+        margin-left: 0px;
         color: #000000;
         font-weight: bold;
         font-size: 14px;
