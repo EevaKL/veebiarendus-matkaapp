@@ -487,6 +487,11 @@ img.uudis-pilt {
         line-height: 89px;
     }
 
+    table td {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
 
 
