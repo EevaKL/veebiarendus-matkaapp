@@ -9,16 +9,7 @@ matkad = [
         nimetus: "Hukkunud alpinisti radadel",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
         pikkkirjeldus: `
-        <p>Lorem ipsum dolor sit amet. Et omnis odio non consectetur iure aut molestiae assumenda quo velit aliquid est voluptatum unde eos consectetur provident et voluptatum aliquam. Aut sequi sint est quod quae in quia laborum ea porro tenetur et consequatur minima.
-        </p> 
-        <p>Et assumenda galisum est sapiente voluptates ut repudiandae voluptas qui aspernatur voluptatem et odio. Ab molestias quasi et delectus consectetur ea culpa dolor qui sunt omnis vel reprehenderit ullam eum expedita repellat ut iste veritatis. Eum magnam iure et facilis natus aut voluptas dolorum. Est quae internos est quia perspiciatis vel temporibus voluptas nam totam officiis ut reprehenderit aspernatur qui voluptas quaerat. 
-        </p>
-        <p>33 suscipit debitis ab voluptatum repudiandae est maxime aliquid! Aut cupiditate exercitationem in autem unde ut consequatur Quis ex debitis culpa aut mollitia fuga id accusamus placeat? Hic iusto modi est dicta dolorum 33 alias voluptatibus eos incidunt deserunt et sequi laborum et laboriosam aliquid et reprehenderit laudantium. 
-        </p>
-        <p>Et ipsam officia repudiandae architecto ab beatae impedit est aspernatur voluptates At consequatur repudiandae vel quis deleniti. Id alias neque et nesciunt autem eos quibusdam aperiam eos alias tenetur sed similique officia! Sit iusto molestias ut magnam totam non adipisci tenetur qui deleniti voluptate! Non quasi velit qui consequatur illum qui unde asperiores est necessitatibus tempora qui veniam officiis.
-        </p>
-        <p>Vel nulla deleniti aut totam dolorem ut dolorem optio. In inventore ullam id optio voluptatem qui harum nemo aut inventore obcaecati. Et facere natus aut eligendi aliquam ut deleniti atque est suscipit atque et blanditiis atque! Quo aspernatur quasi ut autem quos rem laudantium numquam non dolorum temporibus. Eum dignissimos voluptas et galisum delectus qui omnis incidunt et internos voluptate. Sit veritatis molestias id voluptatem sunt et minus voluptatem ut expedita dolorum vel quod galisum.
-        </p>
+        Lorem Lorem ipsum dolor sit amet. Aut mollitia ipsa non dolores molestias ut aliquid voluptas aut nihil illo. Et nulla neque ut mollitia iste cum impedit facilis. Hic libero expedita est ipsam ipsum eum reiciendis internos. Et doloribus tenetur ut placeat saepe sed nemo delectus. Et incidunt officiis 33 sequi reiciendis ex sunt nobis est enim assumenda et necessitatibus earum. Eos quos delectus et sequi cumque et vitae rerum aut autem iste et Quis vitae id modi culpa. Aut quis obcaecati sed omnis corrupti Nam galisum rem odio officia? Et voluptatem voluptatem ea omnis sint ea fugit adipisci et exercitationem sequi. Ut quisquam similique et velit dolorem aut velit incidunt aut assumenda illo. In ullam autem Est rerum qui laboriosam tempora qui doloremque earum. Et enim vero aut voluptatibus dolore aut voluptatem excepturi. 33 galisum fuga ab perspiciatis dolores nam cumque minus et dicta atque. In excepturi aperiamvel voluptates et laudantium culpa. Hic enim eligendi et asperiores explicabo non fuga eveniet qui ratione maxime. Ea quasi consequuntur rem deleniti nobis ut dolor debitis et explicabo suscipit in quia odit natus numquam. Est quos quisquam aut quia doloremque non nemo possimus in eligendi galisum rem veniam similique. Ut molestias enim ea molestias delectus qui eius totam cum magnam maxime. Qui illum expedita et eligendi veniam eos enim voluptas quo sapiente asperiores sit excepturi molestiae eos dolore tempore rem amet unde. Et eaque veritatis Est voluptatem sed repellendus minima et facilis voluptatem 33 optio perferendis. Sit porro explicabo non praesentium quia cum veritatis atque vel temporibus asperiores et asperiores vitae aut mollitia voluptas. Vel eius facere et modi reiciendis ut incidunt eaque. In vitae alias et corporis necessitatibus est fugit dicta! Eos molestiae quasi sit pariatur repellat et eligendi dolorem At consequatur illum a reiciendis porro. Qui iusto possimus et beatae Ut aliquid! Sed dolor dolore id rerum itaque aut consectetur itaque ut tempora iure et sunt laudantium. Ut atque ipsum non amet voluptatem aut itaque dolores aut aperiam consequuntur eum architecto galisum qui voluptatum nihil sed libero sunt. dolor sit amet. Et omnis odio non consectetur iure aut molestiae assumenda quo velit aliquid est voluptatum unde eos consectetur provident et voluptatum aliquam. Aut sequi sint est quod quae in quia laborum ea porro tenetur et consequatur minima.
         `,
         pildiUrl: "/assets/hukkunud_alpinisti_radadel.jpg",
         osalejad: [],
@@ -30,16 +21,7 @@ matkad = [
         nimetus: "Uputatud linn Bulgaarias",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
         pikkkirjeldus: `
-        <p>Lorem ipsum dolor sit amet. Et omnis odio non consectetur iure aut molestiae assumenda quo velit aliquid est voluptatum unde eos consectetur provident et voluptatum aliquam. Aut sequi sint est quod quae in quia laborum ea porro tenetur et consequatur minima.
-        </p> 
-        <p>Et assumenda galisum est sapiente voluptates ut repudiandae voluptas qui aspernatur voluptatem et odio. Ab molestias quasi et delectus consectetur ea culpa dolor qui sunt omnis vel reprehenderit ullam eum expedita repellat ut iste veritatis. Eum magnam iure et facilis natus aut voluptas dolorum. Est quae internos est quia perspiciatis vel temporibus voluptas nam totam officiis ut reprehenderit aspernatur qui voluptas quaerat. 
-        </p>
-        <p>33 suscipit debitis ab voluptatum repudiandae est maxime aliquid! Aut cupiditate exercitationem in autem unde ut consequatur Quis ex debitis culpa aut mollitia fuga id accusamus placeat? Hic iusto modi est dicta dolorum 33 alias voluptatibus eos incidunt deserunt et sequi laborum et laboriosam aliquid et reprehenderit laudantium. 
-        </p>
-        <p>Et ipsam officia repudiandae architecto ab beatae impedit est aspernatur voluptates At consequatur repudiandae vel quis deleniti. Id alias neque et nesciunt autem eos quibusdam aperiam eos alias tenetur sed similique officia! Sit iusto molestias ut magnam totam non adipisci tenetur qui deleniti voluptate! Non quasi velit qui consequatur illum qui unde asperiores est necessitatibus tempora qui veniam officiis.
-        </p>
-        <p>Vel nulla deleniti aut totam dolorem ut dolorem optio. In inventore ullam id optio voluptatem qui harum nemo aut inventore obcaecati. Et facere natus aut eligendi aliquam ut deleniti atque est suscipit atque et blanditiis atque! Quo aspernatur quasi ut autem quos rem laudantium numquam non dolorum temporibus. Eum dignissimos voluptas et galisum delectus qui omnis incidunt et internos voluptate. Sit veritatis molestias id voluptatem sunt et minus voluptatem ut expedita dolorum vel quod galisum.
-        </p>
+        Lorem ipsum dolor sit amet. Aut mollitia ipsa non dolores molestias ut aliquid voluptas aut nihil illo. Et nulla neque ut mollitia iste cum impedit facilis. Hic libero expedita est ipsam ipsum eum reiciendis internos. Et doloribus tenetur ut placeat saepe sed nemo delectus. Et incidunt officiis 33 sequi reiciendis ex sunt nobis est enim assumenda et necessitatibus earum. Eos quos delectus et sequi cumque et vitae rerum aut autem iste et Quis vitae id modi culpa. Aut quis obcaecati sed omnis corrupti Nam galisum rem odio officia? Et voluptatem voluptatem ea omnis sint ea fugit adipisci et exercitationem sequi. Ut quisquam similique et velit dolorem aut velit incidunt aut assumenda illo. In ullam autem Est rerum qui laboriosam tempora qui doloremque earum. Et enim vero aut voluptatibus dolore aut voluptatem excepturi. 33 galisum fuga ab perspiciatis dolores nam cumque minus et dicta atque. In excepturi aperiamvel voluptates et laudantium culpa. Hic enim eligendi et asperiores explicabo non fuga eveniet qui ratione maxime. Ea quasi consequuntur rem deleniti nobis ut dolor debitis et explicabo suscipit in quia odit natus numquam. Est quos quisquam aut quia doloremque non nemo possimus in eligendi galisum rem veniam similique. Ut molestias enim ea molestias delectus qui eius totam cum magnam maxime. Qui illum expedita et eligendi veniam eos enim voluptas quo sapiente asperiores sit excepturi molestiae eos dolore tempore rem amet unde. Et eaque veritatis Est voluptatem sed repellendus minima et facilis voluptatem 33 optio perferendis. Sit porro explicabo non praesentium quia cum veritatis atque vel temporibus asperiores et asperiores vitae aut mollitia voluptas. Vel eius facere et modi reiciendis ut incidunt eaque. In vitae alias et corporis necessitatibus est fugit dicta! Eos molestiae quasi sit pariatur repellat et eligendi dolorem At consequatur illum a reiciendis porro. Qui iusto possimus et beatae Ut aliquid! Sed dolor dolore id rerum itaque aut consectetur itaque ut tempora iure et sunt laudantium. Ut atque ipsum non amet voluptatem aut itaque dolores aut aperiam consequuntur eum architecto galisum qui voluptatum nihil sed libero sunt.
         `,
         pildiUrl: "/assets/uputatud_linn_rumeenias.jpg",
         osalejad: [],
@@ -51,16 +33,7 @@ matkad = [
         nimetus: "Talvematk: Religioosed ehitised Uue usu kloostris",
         kirjeldus: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci, nemo eanulla illumeaque officia quisquam tempora quo veniam quos suscipit optio recusandae totamlaborum corpori rerum iste obcaecati.",
         pikkkirjeldus: `
-        <p>Lorem ipsum dolor sit amet. Et omnis odio non consectetur iure aut molestiae assumenda quo velit aliquid est voluptatum unde eos consectetur provident et voluptatum aliquam. Aut sequi sint est quod quae in quia laborum ea porro tenetur et consequatur minima.
-        </p> 
-        <p>Et assumenda galisum est sapiente voluptates ut repudiandae voluptas qui aspernatur voluptatem et odio. Ab molestias quasi et delectus consectetur ea culpa dolor qui sunt omnis vel reprehenderit ullam eum expedita repellat ut iste veritatis. Eum magnam iure et facilis natus aut voluptas dolorum. Est quae internos est quia perspiciatis vel temporibus voluptas nam totam officiis ut reprehenderit aspernatur qui voluptas quaerat. 
-        </p>
-        <p>33 suscipit debitis ab voluptatum repudiandae est maxime aliquid! Aut cupiditate exercitationem in autem unde ut consequatur Quis ex debitis culpa aut mollitia fuga id accusamus placeat? Hic iusto modi est dicta dolorum 33 alias voluptatibus eos incidunt deserunt et sequi laborum et laboriosam aliquid et reprehenderit laudantium. 
-        </p>
-        <p>Et ipsam officia repudiandae architecto ab beatae impedit est aspernatur voluptates At consequatur repudiandae vel quis deleniti. Id alias neque et nesciunt autem eos quibusdam aperiam eos alias tenetur sed similique officia! Sit iusto molestias ut magnam totam non adipisci tenetur qui deleniti voluptate! Non quasi velit qui consequatur illum qui unde asperiores est necessitatibus tempora qui veniam officiis.
-        </p>
-        <p>Vel nulla deleniti aut totam dolorem ut dolorem optio. In inventore ullam id optio voluptatem qui harum nemo aut inventore obcaecati. Et facere natus aut eligendi aliquam ut deleniti atque est suscipit atque et blanditiis atque! Quo aspernatur quasi ut autem quos rem laudantium numquam non dolorum temporibus. Eum dignissimos voluptas et galisum delectus qui omnis incidunt et internos voluptate. Sit veritatis molestias id voluptatem sunt et minus voluptatem ut expedita dolorum vel quod galisum.
-        </p>
+        Lorem ipsum dolor sit amet. Aut mollitia ipsa non dolores molestias ut aliquid voluptas aut nihil illo. Et nulla neque ut mollitia iste cum impedit facilis. Hic libero expedita est ipsam ipsum eum reiciendis internos. Et doloribus tenetur ut placeat saepe sed nemo delectus. Et incidunt officiis 33 sequi reiciendis ex sunt nobis est enim assumenda et necessitatibus earum. Eos quos delectus et sequi cumque et vitae rerum aut autem iste et Quis vitae id modi culpa. Aut quis obcaecati sed omnis corrupti Nam galisum rem odio officia? Et voluptatem voluptatem ea omnis sint ea fugit adipisci et exercitationem sequi. Ut quisquam similique et velit dolorem aut velit incidunt aut assumenda illo. In ullam autem Est rerum qui laboriosam tempora qui doloremque earum. Et enim vero aut voluptatibus dolore aut voluptatem excepturi. 33 galisum fuga ab perspiciatis dolores nam cumque minus et dicta atque. In excepturi aperiamvel voluptates et laudantium culpa. Hic enim eligendi et asperiores explicabo non fuga eveniet qui ratione maxime. Ea quasi consequuntur rem deleniti nobis ut dolor debitis et explicabo suscipit in quia odit natus numquam. Est quos quisquam aut quia doloremque non nemo possimus in eligendi galisum rem veniam similique. Ut molestias enim ea molestias delectus qui eius totam cum magnam maxime. Qui illum expedita et eligendi veniam eos enim voluptas quo sapiente asperiores sit excepturi molestiae eos dolore tempore rem amet unde. Et eaque veritatis Est voluptatem sed repellendus minima et facilis voluptatem 33 optio perferendis. Sit porro explicabo non praesentium quia cum veritatis atque vel temporibus asperiores et asperiores vitae aut mollitia voluptas. Vel eius facere et modi reiciendis ut incidunt eaque. In vitae alias et corporis necessitatibus est fugit dicta! Eos molestiae quasi sit pariatur repellat et eligendi dolorem At consequatur illum a reiciendis porro. Qui iusto possimus et beatae Ut aliquid! Sed dolor dolore id rerum itaque aut consectetur itaque ut tempora iure et sunt laudantium. Ut atque ipsum non amet voluptatem aut itaque dolores aut aperiam consequuntur eum architecto galisum qui voluptatum nihil sed libero sunt.
         `,
         pildiUrl: "/assets/religioosed_ehitised_talvematk_Uueusu_kloostris.jpg",
         osalejad: [],
@@ -250,6 +223,62 @@ function tagastaUudised(req, res) {
     res.send(uudised)
 }
 
+function muudaMatka(req, res) {
+    const matk = matkad[req.params.matkaId]
+    if (req.query.avatud != undefined) {
+        matk.kasRegistreerumineAvatud = (req.query.avatud === 'true')
+    }
+
+    if (req.query.nahtav != undefined) {
+        matk.kasNahtav = (req.query.nahtav === 'true')
+    }
+
+    if (req.query.nimetus != undefined) {
+        matk.nimetus = req.query.nimetus
+    }
+
+    if (req.query.pildiUrl != undefined) {
+        matk.piltUrl = req.query.pildiUrl
+    }
+
+    if (req.query.pikkkirjeldus != undefined) {
+        matk.pikkkirjeldus = req.query.pikkkirjeldus
+    }
+
+    if (req.query.kirjeldus != undefined) {
+        matk.kirjeldus = req.query.kirjeldus
+    }
+
+    console.log(matk)
+    res.send(matk)
+}
+
+function muudaUudist(req, res) {
+    const uudis = uudised[req.params.uudisIndeks]
+    if (req.query.pealkiri != undefined) {
+        uudis.pealkiri = req.query.pealkiri
+    }
+
+    if (req.query.kokkuvote != undefined) {
+        uudis.kokkuvote = req.query.kokkuvote
+    }
+
+    if (req.query.uudistekst != undefined) {
+        uudis.uudistekst = req.query.uudistekst
+    }
+
+    if (req.query.pohitekst != undefined) {
+        uudis.pohitekst = req.query.pohitekst
+    }
+
+    if (req.query.uudispilt != undefined) {
+        uudis.uudispilt = req.query.uudispilt
+    }
+
+    console.log(uudis)
+    res.send(uudis)
+}
+
 const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
@@ -269,5 +298,7 @@ app.get("/blogi/:uudisIndeks", naitaUudist)
 app.get("/matk/:matkaId", kuvaMatk)
 app.get("/api/matk", tagastaMatkad)
 app.get("/api/uudis", tagastaUudised)
+app.get("/api/matk/:matkaId/muuda", muudaMatka)
+app.get("/api/uudis/:uudisIndeks/muuda", muudaUudist)
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`))

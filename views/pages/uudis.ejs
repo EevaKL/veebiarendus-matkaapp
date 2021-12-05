@@ -11,9 +11,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/moogamatkad.css">
+    <script src="moogamatkad.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,32 +23,29 @@
         <div class="paisSektsioon">
             <div class="container">
                 <%- include("../partials/menyy.ejs") %>
+                    <div class="uudisSektsioon">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 uudis-tekst">
+                                <h3>
+                                    <%= uudis.pealkiri %>
+                                </h3>
+                                <p class="kirjeldused">
+                                    <%- uudis.uudistekst %>
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6 uudis-pilt">
+                                <img class="uudis-pilt" src="<%= uudis.uudispilt %>" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                <%- uudis.pohitekst %>
+                            </p>
+                        </div>
+                    </div>
             </div>
         </div>
     </header>
-    <main>
-        <div class="uudisSektsioon">
-            <div class="row">
-                <div class="col-12 col-lg-6 uudis-tekst">
-                    <h3>
-                        <%= uudis.pealkiri %>
-                    </h3>
-                    <p class="kirjeldused">
-                        <%- uudis.uudistekst %>
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 uudis-pilt">
-                    <img class="uudis-pilt" src="<%= uudis.uudispilt %>" alt="">
-                </div>
-            </div>
-            <div>
-                <p>
-                    <%- uudis.pohitekst %>
-                </p>
-            </div>
-        </div>
-
-    </main>
 </body>
 
 </html>

@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,36 +23,32 @@
         <div class="paisSektsioon">
             <div class="container">
                 <%- include("../partials/menyy.ejs") %>
+                    <div class="registreerumiseVorm row">
+                        <div class="col-12 col-lg-6">
+                            <h3>Registreeru matkale:<br>
+                                <%= matk.nimetus %>
+                            </h3>
+                            <p class="kirjeldused">
+                                <%= matk.kirjeldus %>
+                            </p>
+                            <form class="regkontaktSektsioon" action="/kinnitus/<%= matk.id %>" id="saadateade">
+                                <label for="nimi"><b>Nimi:</b></label>
+                                <input type="text" id="nimi" name="nimi" placeholder="Nimi"><br>
+                                <label for="email"><b>Email:</b></label>
+                                <input type="text" id="email" name="email" placeholder="Email"><br>
+                                <textarea name="teade" placeholder="Jäta oma teade" id="teade" cols="30"
+                                    rows="10"></textarea><br>
+                                <input type="submit" name="nupp" id="saada" value="Saada">
+                                <script src="moogamatkad.js"></script>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
+                        </div>
+                    </div>
             </div>
         </div>
     </header>
-    <main>
-        <div class="registreerumiseVorm row">
-            <div class="col-12 col-lg-6">
-                <h3>Registreeru matkale:<br>
-                    <%= matk.nimetus %>
-                </h3>
-                <p class="kirjeldused">
-                    <%= matk.kirjeldus %>
-                </p>
-                <form class="regkontaktSektsioon" action="/kinnitus/<%= matk.id %>" id="saadateade">
-                    <label for="nimi"><b>Nimi:</b></label>
-                    <input type="text" id="nimi" name="nimi" placeholder="Nimi"><br>
-                    <label for="email"><b>Email:</b></label>
-                    <input type="text" id="email" name="email" placeholder="Email"><br>
-                    <textarea name="teade" placeholder="Jäta oma teade" id="teade" cols="30" rows="10"></textarea><br>
-                    <input type="submit" name="nupp" id="saada" value="Saada">
-                    <script src="moogamatkad.js"></script>
-                </form>
-            </div>
-            <div class="col-12 col-lg-6">
-                <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
-            </div>
-        </div>
-    </main>
-
-
-
 
 </body>
 

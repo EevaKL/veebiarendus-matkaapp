@@ -277,12 +277,12 @@ th {
 }
 
 .registreerumiseVorm {
-    margin-top: -630px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: rgba(169, 169, 169, 0.452);
     border-radius: 5px;
     border: 1px solid rgba(145, 145, 145, 0.452);
@@ -313,13 +313,13 @@ img.registreerumine-pilt {
 }
 
 .blogiSektsioon {
-    margin-top: -630px;
+    margin-top: 50px;
 }
 
 .blogiSektsioon h1 {
     font-weight: 600;
     text-transform: uppercase;
-    margin-left: 68px;
+    margin-left: 60px;
 }
 
 .uudisteKonteiner {
@@ -334,15 +334,20 @@ img.registreerumine-pilt {
 }
 
 .uudisSektsioon {
-    margin-top: -630px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: rgba(169, 169, 169, 0.452);
     border-radius: 5px;
     border: 1px solid rgba(145, 145, 145, 0.452);
+}
+
+.uudis-tekst {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 img.uudis-pilt {
@@ -360,7 +365,6 @@ img.uudis-pilt {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        margin-right: 30px;
     }
 
     li a {
@@ -394,11 +398,87 @@ img.uudis-pilt {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) {
+    .topnav a.icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .matkadeSektsioon {
         margin-top: -100px;
     }
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+      }
+
+    .topnav a.icon {
+        color: #0B0B0B;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 40px;
+        margin-right: 20px;
+    }
+
+    .topnav a:hover {
+        color: black;      }
+
+    .active {
+        color: #0B0B0B;
+    }
+
+    ul {
+        display: table;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li a {
+        padding-left: 10px;
+        color: #000000;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 2.67px;
+    }
+
+    .paislogo {
+        margin-left: 0px;
+    }
+
+    .rida {
+        margin-left: 10px;
+    }
+
+    .liblikas2 {
+        display: none;
+    }
+
+    .kontaktSektsioon,
+    .uudisteKonteiner,
+    .uudisSektsioon,
+    .registreerumiseVorm {
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+    
+        
+    .blogiSektsioon h1 {
+        margin-left: 10px;
+    }
+
 }
+
 
 @media (min-width: 500px) {
     .container, .container-lg, .container-sm, .container-md, .container-xl {
