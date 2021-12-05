@@ -371,7 +371,7 @@ img.uudis-pilt {
         padding-left: 10px;
         color: #000000;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 2.67px;
     }
 
@@ -437,9 +437,6 @@ img.uudis-pilt {
 
     ul {
         display: table;
-        align-items: center;
-        justify-content: center;
-        list-style-type: none;
         margin: 0;
         padding: 0;
     }
@@ -448,7 +445,7 @@ img.uudis-pilt {
         padding-left: 10px;
         color: #000000;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 2.67px;
     }
 
