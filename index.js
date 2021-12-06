@@ -1,7 +1,14 @@
 const { timingSafeEqual } = require('crypto')
 const express = require('express')
+const { MongoClient } = require('mongodb')
 const path = require('path')
 const PORT = process.env.PORT || 16000
+
+const andmebaas = "matkaApp"
+const salasona = "MatkaAppEeva123"
+const mongoUrl = `mongodb+srv://matka--app:${salasona}@cluster0.unqn6.mongodb.net/${andmebaas}?retryWrites=true&w=majority`
+
+const client = new MongoClient(mongoUrl)
 
 matkad = [
     {
@@ -176,21 +183,29 @@ uudised = [
     }
 ]
 
-function registreerumiseKinnitus(req, res) {
+async function registreerumiseKinnitus(req, res) {
     console.log(req.query.nimi)
     if (!req.query.email) {
         res.end("Email puudub, registreerumine ebaõnnestus!")
         return false
     }
+
+    const matk = matkad[req.params.matkaId]
+
     const registreerumine = {
+        matkId: matk.id,
         nimi: req.query.nimi,
         email: req.query.email,
         teade: req.query.teade
     }
 
-    const matk = matkad[req.params.matkaId]
     matk.osalejad.push(registreerumine)
 
+    await client.connect()
+    const database = client.db(andmebaas)
+    const registreerumised = database.collection("registreerumised")
+    const tulemus = await registreerumised.insertOne(registreerumine)
+    console.log(`Lisati registreerumine idd-ga: ${tulemus.insertedId}`)
     res.end(`Registreeruti matkale`)
 }
 
@@ -279,7 +294,40 @@ function muudaUudist(req, res) {
     res.send(uudis)
 }
 
+async function loeRegistreerumised(matkId) {
+    await client.connect()
+    const database = client.db(andmebaas)
+    const registreerumised = database.collection("registreerumised")
+
+    let filter = {}
+
+    if (matkId !== undefined) {
+        filter = { matkId: parseInt(matkId) }
+    }
+
+    console.log(filter)
+
+    const tulemus = await registreerumised.find(filter).toArray()
+    client.close()
+    return tulemus
+}
+
+async function tagastaRegistreerumised(req, res) {
+    const andmed = await loeRegistreerumised(req.params.matkId)
+    res.send(andmed)
+}
+
+async function lisaOsalejadMatkadele() {
+    for (matkId in matkad) {
+        const matk = matkad[matkId]
+        const osalejad = await loeRegistreerumised(matk.id)
+        matk.osalejad = osalejad
+    }
+}
+
 const app = express()
+lisaOsalejadMatkadele()
+
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
@@ -300,5 +348,7 @@ app.get("/api/matk", tagastaMatkad)
 app.get("/api/uudis", tagastaUudised)
 app.get("/api/matk/:matkaId/muuda", muudaMatka)
 app.get("/api/uudis/:uudisIndeks/muuda", muudaUudist)
+app.get("/api/registreerumised", tagastaRegistreerumised)
+app.get("/api/registreerumised/:matkId", tagastaRegistreerumised)
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`))
