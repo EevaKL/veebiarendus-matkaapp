@@ -432,7 +432,8 @@ img.uudis-pilt {
     }
 
     .topnav a:hover {
-        color: black;      }
+        color: #0062ca;
+    }
 
     .active {
         color: #0B0B0B;
