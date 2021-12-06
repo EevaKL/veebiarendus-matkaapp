@@ -70,7 +70,7 @@ ul {
 }
 
 li a {
-    padding-left: 25px;
+    padding-left: 27px;
     color: #000000;
     font-weight: bold;
     font-size: 16.67px;
@@ -88,7 +88,7 @@ li a:hover {
 }
 
 .paisSekstioon-pealkirjad {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .paisSekstioon-pealkirjad h1,
@@ -368,11 +368,11 @@ img.uudis-pilt {
     }
 
     li a {
-        padding-left: 10px;
+        padding-left: 16px;
         color: #000000;
         font-weight: bold;
         font-size: 14px;
-        letter-spacing: 2.67px;
+        letter-spacing: 2px;
     }
 
     .paislogo {
@@ -449,7 +449,7 @@ img.uudis-pilt {
         color: #000000;
         font-weight: bold;
         font-size: 14px;
-        letter-spacing: 2.67px;
+        letter-spacing: 2px;
     }
 
     .paislogo {
