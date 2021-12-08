@@ -209,6 +209,43 @@ async function registreerumiseKinnitus(req, res) {
     res.end(`Registreeruti matkale`)
 }
 
+async function lisaUudis(req, res) {
+    const uusUudis = {
+        pealkiri: req.body.pealkiri,
+        kokkuvote: req.body.kokkuvote,
+        uudistekst: req.body.uudistekst,
+        pohitekst: req.body.pohitekst,
+        pildiUrl: req.body.pildiUrl
+    }
+
+    await client.connect()
+    const database = client.db(andmebaas)
+    const uudisedCollection = database.collection("uudis")
+    const tulemus = await uudisedCollection.insertOne(uusUudis)
+    uusUudis.id = tulemus.insertedId
+    uudised.push(uusUudis)
+    res.send(uusUudis)
+}
+
+async function lisaMatk(req, res) {
+    const uusMatk = {
+        nimetus: req.body.nimetus,
+        kirjeldus: req.body.kirjeldus,
+        pildiUrl: req.body.pildiUrl,
+        osalejad: [],
+        kasNahtav: req.body.kasNahtav,
+        kasRegistreerumineAvatud: req.body.kasRegistreerumineAvatud
+    }
+
+    await client.connect()
+    const database = client.db(andmebaas)
+    const matkadCollection = database.collection("matk")
+    const tulemus = await matkadCollection.insertOne(uusMatk)
+    uusMatk.id = matkad.length
+    matkad.push(uusMatk)
+    res.send(uusMatk)
+}
+
 function naitaUudist(req, res) {
     const uudisIndeks = req.params.uudisIndeks
     const uudis = uudised[uudisIndeks]
@@ -232,6 +269,32 @@ function naitaMatkad(req, res) {
 
 function tagastaMatkad(req, res) {
     res.send(matkad)
+}
+
+async function loeUudised() {
+    await client.connect()
+    const database = client.db(andmebaas)
+    const uudisedCollection = database.collection("uudis")
+    const andmed = await uudisedCollection.find().toArray()
+    for (i in andmed) {
+        const uudis = andmed[i]
+        uudis.id = uudised.length
+        uudised.push(uudis)
+    }
+    console.log("Uudised loetud")
+}
+
+async function loeMatkad() {
+    await client.connect()
+    const database = client.db(andmebaas)
+    const matkCollection = database.collection("matk")
+    const andmed = await matkCollection.find().toArray()
+    for (i in andmed) {
+        const matk = andmed[i]
+        matk.id = matkad.length
+        matkad.push(matk)
+    }
+    console.log("Matkad loetud")
 }
 
 function tagastaUudised(req, res) {
@@ -308,7 +371,7 @@ async function loeRegistreerumised(matkId) {
     console.log(filter)
 
     const tulemus = await registreerumised.find(filter).toArray()
-    client.close()
+    //client.close()
     return tulemus
 }
 
@@ -327,8 +390,11 @@ async function lisaOsalejadMatkadele() {
 
 const app = express()
 lisaOsalejadMatkadele()
+loeUudised()
+loeMatkad()
 
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.json())
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.get("/", naitaMatkad)
@@ -345,7 +411,9 @@ app.get("/kinnitus/:matkaId", registreerumiseKinnitus)
 app.get("/blogi/:uudisIndeks", naitaUudist)
 app.get("/matk/:matkaId", kuvaMatk)
 app.get("/api/matk", tagastaMatkad)
+app.post("/api/matk", lisaMatk)
 app.get("/api/uudis", tagastaUudised)
+app.post("/api/uudis", lisaUudis)
 app.get("/api/matk/:matkaId/muuda", muudaMatka)
 app.get("/api/uudis/:uudisIndeks/muuda", muudaUudist)
 app.get("/api/registreerumised", tagastaRegistreerumised)
