@@ -2,7 +2,7 @@ const { timingSafeEqual } = require('crypto')
 const express = require('express')
 const { MongoClient } = require('mongodb')
 const path = require('path')
-const PORT = process.env.PORT || 16000
+const PORT = process.env.PORT || 8000
 
 const andmebaas = "matkaApp"
 const salasona = "MatkaAppEeva123"
