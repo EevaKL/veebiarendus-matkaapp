@@ -532,6 +532,12 @@ img.uudis-pilt {
         padding-left: 40px;
         margin: auto;
     }
+
+    .quote h5 {
+        color: #FFFFFF;
+        padding-bottom: 20px;
+        font-size: 2rem;
+    }
 }
 
 
