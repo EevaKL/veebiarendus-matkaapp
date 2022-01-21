@@ -442,6 +442,18 @@ img.uudis-pilt {
     background: #0062ca;
 }
 
+.jalus {
+    background-color: rgba(169, 169, 169, 0.452);
+}
+
+.jalus ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
 
 @media screen and (max-width: 1020px) {
     ul {

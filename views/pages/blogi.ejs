@@ -19,11 +19,11 @@
 </head>
 
 <body>
-    <header>
+    <div>
         <div class="paisSektsioon">
             <div class="container">
                 <%- include("../partials/menyy.ejs") %>
-                    <div class="blogiSektsioon">
+                    <main class="blogiSektsioon">
                         <h1>Blogi & Uudised</h1>
                         <div class="uudisteKonteiner row">
                             <% for (let i=0; i < uudised.length; i++) { %>
@@ -41,11 +41,16 @@
                                 </div>
                                 <% } %>
                         </div>
-                    </div>
+                    </main>
             </div>
-
+            <footer>
+                <div class="jalus">
+                    <%- include("../partials/footer.ejs") %>
+                </div>
+            </footer>
         </div>
-    </header>
+    </div>
+
 </body>
 
 </html>
