@@ -118,7 +118,7 @@ li a:hover {
 }
 
 .paisSekstioon-pealkirjad h4 {
-    font-size: 12.5px;
+    font-size: 16px;
     line-height: 29.17px;
     align-items: left;
     color: #FFFFFF;
@@ -142,7 +142,7 @@ li a:hover {
 
 .calltoaction {
     background: #0B0B0B 0% 0% no-repeat padding-box;
-    width: 247px;
+    width: 278px;
     height: 58px;
     border-radius: 5px;
 }
@@ -250,7 +250,7 @@ th {
 
 .matkadeSektsioon {
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .matkadeTutvustus {
@@ -364,7 +364,7 @@ img.uudis-pilt {
     background-position: center;
     width: 100%;
     height: 400px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     justify-content: center;
 }
 
@@ -384,6 +384,62 @@ img.uudis-pilt {
 
 .quote p {
     color: #FFFFFF;
+}
+
+.uudiskiri {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.seljakotirandur {
+    width: 541px;
+    height: 522px;
+    object-fit: cover;
+    border-radius: 58% 42% 42% 58% / 61% 59% 41% 39%;
+}
+
+.randur {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.kutseuudiskirjale {
+    padding-top: 100px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.kutseuudiskirjale p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.liituuudiskirjaga {
+    background: #0B0B0B 0% 0% no-repeat padding-box;
+    width: 247px;
+    height: 58px;
+    border-radius: 5px;
+}
+
+.liituuudiskirjaga a {
+    color: #FFFFFF;
+}
+
+.liituuudiskirjaga p {
+    font-size: 16px;
+    line-height: 29.17px;
+    color: #FFFFFF;
+    letter-spacing: 2.25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    padding-top: 14px;
+    padding-left: 16px;
+}
+
+.liituuudiskirjaga:hover {
+    background: #0062ca;
 }
 
 
