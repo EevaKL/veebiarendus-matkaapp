@@ -448,7 +448,15 @@ img.uudis-pilt {
 
 footer{
     bottom: 0;
+    display: flex;
+    flex-direction: row;
    }
+
+@media (max-width: 800px) {
+    footer {
+      flex-direction: column;
+    }
+}
 
 .footer-distributed {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -463,7 +471,6 @@ footer{
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
-    display: inline-block;
     vertical-align: top;
 }
     
@@ -475,17 +482,17 @@ footer{
     color:  #ffffff;
     font: normal 36px 'Cookie', cursive;
     margin: 0;
-}
-    
-.footer-distributed h3 span{
-    color:  #5383d3;
-}
-    
+}        
     
 .footer-distributed .footer-links{
-    color:  #ffffff;
-    margin: 20px 0 12px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16.67px;
     padding: 0;
+}
+
+.footer-distributed .footer-links a:hover{
+    color: #0062ca;
 }
     
 .footer-distributed .footer-links a{
@@ -540,8 +547,12 @@ footer{
 }
     
 .footer-distributed .footer-center p a{
-    color:  #5383d3;
-    text-decoration: none;;
+    color:  #ffffff;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-center p a:hover{
+    color: #0062ca;
 }
     
 .footer-distributed .footer-right{
